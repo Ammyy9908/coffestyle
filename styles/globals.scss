@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$link-color:#1d1f2e;
+$accent-color:#a25f4b;
+$border-color:rgba(162, 95, 75, 0.2);
+$muted-text-color:rgba(29, 31, 46, 0.7);
+$font:'Karla', sans-serif;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+h1,h2,h3,h4{
+  margin-bottom: 15px;
+  font-family: $font;
+}
+h1,h3{
+  margin-top: 10px;
+}
+h1,h2,h3,h4,h5{
+  font-weight: 400;
+}
+h1{
+ 
+  font-size: 36px;
+    line-height: 50px;
+}
+h2{
+  margin-top: 20px;
+    font-size: 28px;
+    line-height: 40px;
+}
+h3{
+
+    
+    align-self: auto;
+    font-size: 24px;
+    line-height: 36px;
+}
+h4{
+  margin-top: 15px;
+  
+  font-size: 22px;
+  line-height: 32px;
+}
+h5{
+  
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h5,h6{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h6{
+
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.label{
+  position: static;
+  display: block;
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+p{
+  color: $muted-text-color;
+  
+  margin-bottom: 15px;
+}
+.big-paragraph{
+  font-size: 18px;
+
+  line-height: 30px;
+}
+.small-paragraph{
+  font-size: 14px;
+  line-height: 22px;
+  align-self: auto;
+}
+
+/*Buttons*/
+.button{
+  position: relative;
+  z-index: 50;
+  display: inline-block;
+  padding:18px 22px;
+  border-radius: 0;
+  justify-content: center;
+  transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.white-button{
+  background-color: #fff;
+  color: #1d1f2e;
+}
+.dark-btn{
+  background-color: #1d1f2e;
+  color: #fff;
+}
+
+.menu-item{
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #1d1f2e;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
